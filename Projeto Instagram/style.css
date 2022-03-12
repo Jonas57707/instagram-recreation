@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;      /* Eixo Y*/
+    justify-content: start;  /* Eixo X*/
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.instagram-phone img{
+    height: 35rem;
+    width: 20rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /* Vertical */                 /* Passaram a ser trocados por causa do-*/
+    justify-content: space-around; /* Horizontal */    /*flex-diretion */
+    flex-direction: column; /* Por causa desse item! esse os eixos de cima mudaram a direção*/
+    width: 50%;
+    min-height: 30rem;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: 25rem;
+    height: 4rem;
+   
+}
+
+
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 8rem;
+    margin-bottom: 10px;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem; 
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+
+.app-download:nth-child(1){
+    background-image: url('D:/Curso de HTML Web Developer/CSS3/Projeto Instagram/projeto-instagram/google-play.png');
+    border-radius: 5px;
+}
+
+.app-download:nth-child(2){
+    background-image: url('D:/Curso de HTML Web Developer/CSS3/Projeto Instagram/projeto-instagram/app-store.png');
+    border-radius: 5px;
+}
+
+    /* media queries */
+
+@media (max-width: 1024px){
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 650px){
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    body{
+        background-color: #ffffff;
+    }
+
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+
+}
